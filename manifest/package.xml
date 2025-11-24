@@ -43,6 +43,11 @@
         <name>FlexiPage</name>
     </types>
     <types>
+        <members>Admin</members>
+        <members>Standard</members>
+        <name>Profile</name>
+    </types>
+    <types>
         <members>Training_Course__c</members>
         <members>Certification__c</members>
         <name>CustomObject</name>
