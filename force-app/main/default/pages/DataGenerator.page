@@ -1,0 +1,11 @@
+<apex:page controller="DataGeneratorController" lightningStylesheets="true">
+    <apex:form >
+        <apex:pageBlock title="Salesforce Skills Test Data Generator">
+            <apex:pageMessage summary="Click the button below to generate sample Accounts, Contacts, Courses, and Certifications." severity="info" strength="3"/>
+            <apex:pageMessages />
+            <div style="display: flex; justify-content: center; padding: 20px;">
+                <apex:commandButton value="Generate Sample Data" action="{!generateData}" styleClass="slds-button slds-button_brand"/>
+            </div>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

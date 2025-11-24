@@ -35,4 +35,16 @@
         <tab>Certification__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
+    <tabVisibilities>
+        <tab>Data_Generator</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <pageAccesses>
+        <apexPage>DataGenerator</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <classAccesses>
+        <apexClass>DataGeneratorController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
 </Profile>

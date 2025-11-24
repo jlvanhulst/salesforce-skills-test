@@ -55,12 +55,18 @@
     <types>
         <members>Training_Course__c</members>
         <members>Certification__c</members>
+        <members>Data_Generator</members>
         <name>CustomTab</name>
     </types>
     <types>
         <members>DataGenerationService</members>
         <members>PostInstallScript</members>
+        <members>DataGeneratorController</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+        <members>DataGenerator</members>
+        <name>ApexPage</name>
     </types>
     <types>
         <members>Training_Course__c.All</members>
