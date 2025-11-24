@@ -65,6 +65,7 @@
     <types>
         <members>Training_Course__c.All</members>
         <members>Certification__c.All</members>
+        <members>Contact.All</members>
         <name>ListView</name>
     </types>
     <version>58.0</version>
