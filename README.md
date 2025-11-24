@@ -22,7 +22,7 @@ You can deploy this package using either the "One-Click" method or manually via 
 
 ### Option 1: One-Click Deploy (Recommended for Quick Testing)
 
-<a href="https://githubsfdeploy.herokuapp.com?owner=jlvanhulst&repo=salesforce-skills-test">
+<a href="https://githubsfdeploy.herokuapp.com?owner=jlvanhulst&repo=salesforce-skills-test&ref=main">
   <img alt="Deploy to Salesforce"
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
 </a>

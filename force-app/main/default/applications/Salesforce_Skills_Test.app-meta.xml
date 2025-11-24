@@ -17,5 +17,4 @@
     <tabs>Certification__c</tabs>
     <tabs>standard-report</tabs>
     <uiType>Lightning</uiType>
-    <utilityBar>Salesforce_Skills_Test_UtilityBar</utilityBar>
 </CustomApplication>

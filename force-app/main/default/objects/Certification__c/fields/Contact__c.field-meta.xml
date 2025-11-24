@@ -6,4 +6,5 @@
     <referenceTo>Contact</referenceTo>
     <relationshipName>Certifications</relationshipName>
     <required>true</required>
+    <deleteConstraint>Restrict</deleteConstraint>
 </CustomField>
