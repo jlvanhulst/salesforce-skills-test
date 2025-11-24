@@ -3,9 +3,6 @@
     <fullName>All</fullName>
     <columns>FULL_NAME</columns>
     <columns>ACCOUNT.NAME</columns>
-    <columns>TITLE</columns>
-    <columns>EMAIL</columns>
-    <columns>PHONE</columns>
     <filterScope>Everything</filterScope>
     <label>All Contacts</label>
 </ListView>
