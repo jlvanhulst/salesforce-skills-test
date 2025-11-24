@@ -1,0 +1,5 @@
+.sfdx
+.sf
+.local_preview
+node_modules
+.DS_Store
