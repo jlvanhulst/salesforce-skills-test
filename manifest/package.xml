@@ -62,5 +62,10 @@
         <members>PostInstallScript</members>
         <name>ApexClass</name>
     </types>
+    <types>
+        <members>Training_Course__c.All</members>
+        <members>Certification__c.All</members>
+        <name>ListView</name>
+    </types>
     <version>58.0</version>
 </Package>

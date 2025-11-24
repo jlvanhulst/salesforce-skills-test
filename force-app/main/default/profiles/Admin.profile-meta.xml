@@ -24,6 +24,10 @@
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <tabVisibilities>
+        <tab>standard-Contact</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Training_Course__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
