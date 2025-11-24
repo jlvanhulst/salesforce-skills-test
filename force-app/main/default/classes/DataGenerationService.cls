@@ -1,6 +1,11 @@
 public class DataGenerationService {
 
     public static void generateData() {
+        // Check if data already exists to prevent duplicates
+        if ([SELECT Count() FROM Account WHERE Name LIKE 'Test Account%'] > 0) {
+            return;
+        }
+
         // Create Accounts
         List<Account> accounts = new List<Account>();
         for(Integer i=0; i<5; i++) {
