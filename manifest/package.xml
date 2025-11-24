@@ -57,5 +57,10 @@
         <members>Certification__c</members>
         <name>CustomTab</name>
     </types>
+    <types>
+        <members>DataGenerationService</members>
+        <members>PostInstallScript</members>
+        <name>ApexClass</name>
+    </types>
     <version>58.0</version>
 </Package>

@@ -55,6 +55,13 @@ Use this method to test your SFDX skills or if you want to modify the code befor
     sfdx force:source:deploy -p force-app -u TestOrg
     ```
 
+5.  **Generate Sample Data (Optional):**
+    If you deployed via CLI (or if the post-install script didn't run), you can generate sample data by running this anonymous Apex:
+    ```bash
+    sfdx force:apex:execute -u TestOrg -f scripts/apex/generate_data.apex
+    ```
+    *Note: You'll need to create the file `scripts/apex/generate_data.apex` with the content: `DataGenerationService.generateData();`*
+
 ## Exercises
 
 ### Exercise 1: Data Modeling & Validation
