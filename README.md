@@ -51,3 +51,5 @@ You can deploy this package using either the "One-Click" method or manually via 
 We have prepared a list of challenges to test your skills, ranging from basic configuration to advanced integrations and AI solutions.
 
 👉 **[View the Challenges Roadmap](CHALLENGES.md)**
+
+If you have any questions or need assistance, please don't hesitate to ask jlvanhulst at gmail dot com.
