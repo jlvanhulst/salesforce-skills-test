@@ -28,7 +28,7 @@ You can deploy this package using either the "One-Click" method or manually via 
 ### Recommended: One-Click Deploy
 
 1.  **Create a new Developer Edition Org** (or use a fresh Scratch Org). [Sign up for a free Developer Edition here](https://www.salesforce.com/form/developer-signup/?d=pb).
-2.  Log in to your new org.
+2.  Log in to your new org. (Don't forget that your email is not your username - I always keep forgetting that. The username looks like an email)
 3.  Click the button below to deploy the package directly to your org.
 
 <a href="https://githubsfdeploy.herokuapp.com?owner=jlvanhulst&repo=salesforce-skills-test&ref=main">
