@@ -46,20 +46,21 @@
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>true</enableHistory>
+    <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <label>Certification</label>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Volunteer Hours</label>
     <nameField>
-        <displayFormat>CERT-{0000}</displayFormat>
-        <label>Certification ID</label>
+        <displayFormat>VH-{0000}</displayFormat>
+        <label>Volunteer Hours Name</label>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Certifications</pluralLabel>
+    <pluralLabel>Volunteer Hours</pluralLabel>
     <searchLayouts/>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

@@ -43,23 +43,23 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <enableActivities>true</enableActivities>
+    <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>true</enableHistory>
+    <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <label>Training Course</label>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Group</label>
     <nameField>
-        <displayFormat>COURSE-{0000}</displayFormat>
-        <label>Course ID</label>
-        <type>AutoNumber</type>
+        <label>Group Name</label>
+        <type>Text</type>
     </nameField>
-    <pluralLabel>Training Courses</pluralLabel>
+    <pluralLabel>Groups</pluralLabel>
     <searchLayouts/>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

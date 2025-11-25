@@ -13,8 +13,10 @@
     <navType>Standard</navType>
     <tabs>standard-Account</tabs>
     <tabs>standard-Contact</tabs>
-    <tabs>Training_Course__c</tabs>
-    <tabs>Certification__c</tabs>
+    <tabs>City__c</tabs>
+    <tabs>Group__c</tabs>
+    <tabs>Volunteer__c</tabs>
+    <tabs>Volunteer_Hours__c</tabs>
     <tabs>Data_Generator</tabs>
     <tabs>standard-report</tabs>
     <uiType>Lightning</uiType>

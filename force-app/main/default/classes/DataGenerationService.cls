@@ -75,40 +75,38 @@ public class DataGenerationService {
 
         insert contacts;
 
-        // Create Training Courses
-        List<Training_Course__c> courses = new List<Training_Course__c>();
-        courses.add(new Training_Course__c(
-            Course_Title__c = 'Superhero Ethics 101',
-            Course_Description__c = 'Basic principles of being a hero.',
-            Duration_Hours__c = 4, // Sneaky: Days
-            Max_Participants__c = 50,
-            Status__c = 'Open for Registration',
-            Course_Date__c = Date.today().addDays(30)
-        ));
-        courses.add(new Training_Course__c(
-            Course_Title__c = 'Advanced Gadgetry',
-            Course_Description__c = 'Building suits and batmobiles.',
-            Duration_Hours__c = 40,
-            Max_Participants__c = 5,
-            Status__c = 'Planned',
-            Course_Date__c = Date.today().addDays(60)
-        ));
-        courses.add(new Training_Course__c(
-            Course_Title__c = 'Paper Sales Techniques',
-            Course_Description__c = 'How to sell paper in a digital world.',
-            Duration_Hours__c = 8,
-            Max_Participants__c = 20,
-            Status__c = 'Completed',
-            Course_Date__c = Date.today().addDays(-10)
-        ));
-        insert courses;
+        // Create Cities
+        List<City__c> cities = new List<City__c>();
+        City__c gotham = new City__c(Name = 'Gotham City');
+        cities.add(gotham);
+        City__c metropolis = new City__c(Name = 'Metropolis');
+        cities.add(metropolis);
+        City__c starCity = new City__c(Name = 'Star City');
+        cities.add(starCity);
+        insert cities;
 
-        // Create Certifications
-        List<Certification__c> certs = new List<Certification__c>();
-        certs.add(new Certification__c(Contact__c = contacts[0].Id, Training_Course__c = courses[1].Id, Certification_Date__c = Date.today().addDays(-365), Expiration_Date__c = Date.today().addDays(365), Score__c = 100, Status__c = 'Active')); // Bruce
-        certs.add(new Certification__c(Contact__c = contacts[2].Id, Training_Course__c = courses[1].Id, Certification_Date__c = Date.today().addDays(-200), Expiration_Date__c = Date.today().addDays(165), Score__c = 99.9, Status__c = 'Active')); // Tony
-        certs.add(new Certification__c(Contact__c = contacts[6].Id, Training_Course__c = courses[2].Id, Certification_Date__c = Date.today().addDays(-5), Expiration_Date__c = Date.today().addDays(360), Score__c = 85, Status__c = 'Active')); // Dwight
+        // Create Groups
+        List<Group__c> groups = new List<Group__c>();
+        groups.add(new Group__c(Name = 'Gotham Vigilantes', City__c = gotham.Id));
+        groups.add(new Group__c(Name = 'Wayne Foundation Volunteers', City__c = gotham.Id));
+        groups.add(new Group__c(Name = 'Daily Planet Reporters', City__c = metropolis.Id));
+        groups.add(new Group__c(Name = 'Queen Consolidated Helpers', City__c = starCity.Id));
+        insert groups;
 
-        insert certs;
+        // Create Volunteers
+        List<Volunteer__c> volunteers = new List<Volunteer__c>();
+        volunteers.add(new Volunteer__c(Name = 'Dick Grayson', Group__c = groups[0].Id, Email__c = 'robin@gotham.com', Phone__c = '555-0101', Status__c = 'Active'));
+        volunteers.add(new Volunteer__c(Name = 'Barbara Gordon', Group__c = groups[0].Id, Email__c = 'oracle@gotham.com', Phone__c = '555-0102', Status__c = 'Active'));
+        volunteers.add(new Volunteer__c(Name = 'Clark Kent', Group__c = groups[2].Id, Email__c = 'ckent@dailyplanet.com', Phone__c = '555-0201', Status__c = 'Active'));
+        volunteers.add(new Volunteer__c(Name = 'Oliver Queen', Group__c = groups[3].Id, Email__c = 'oqueen@queencons.com', Phone__c = '555-0301', Status__c = 'Inactive'));
+        insert volunteers;
+
+        // Create Volunteer Hours
+        List<Volunteer_Hours__c> hours = new List<Volunteer_Hours__c>();
+        hours.add(new Volunteer_Hours__c(Volunteer__c = volunteers[0].Id, Date__c = Date.today().addDays(-1), Description__c = 'Patrolling the streets', Hours__c = 4));
+        hours.add(new Volunteer_Hours__c(Volunteer__c = volunteers[0].Id, Date__c = Date.today().addDays(-2), Description__c = 'Training session', Hours__c = 2));
+        hours.add(new Volunteer_Hours__c(Volunteer__c = volunteers[1].Id, Date__c = Date.today().addDays(-1), Description__c = 'Computer systems maintenance', Hours__c = 5));
+        hours.add(new Volunteer_Hours__c(Volunteer__c = volunteers[2].Id, Date__c = Date.today().addDays(-5), Description__c = 'Reporting on local events', Hours__c = 8));
+        insert hours;
     }
 }

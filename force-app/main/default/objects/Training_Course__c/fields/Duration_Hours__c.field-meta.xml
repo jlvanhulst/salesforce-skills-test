@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Duration_Hours__c</fullName>
-    <label>Duration (Days)</label>
-    <type>Number</type>
-    <precision>4</precision>
-    <scale>1</scale>
-    <description>SNEAKY TRAP: Label says Days, but API name is Duration_Hours__c.</description>
-</CustomField>
