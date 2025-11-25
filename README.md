@@ -21,7 +21,15 @@ This unmanaged package is designed to test Salesforce development and administra
 
 You can deploy this package using either the "One-Click" method or manually via the Salesforce CLI.
 
-### Option 1: One-Click Deploy (Recommended for Quick Testing)
+## Deployment
+
+**IMPORTANT: This package is designed to be installed in a NEW, EMPTY Developer Edition or Scratch Org. Do not install this in a production environment or an org with existing data/metadata, as it may cause conflicts.**
+
+### Recommended: One-Click Deploy
+
+1.  **Create a new Developer Edition Org** (or use a fresh Scratch Org).
+2.  Log in to your new org.
+3.  Click the button below to deploy the package directly to your org.
 
 <a href="https://githubsfdeploy.herokuapp.com?owner=jlvanhulst&repo=salesforce-skills-test&ref=main">
   <img alt="Deploy to Salesforce"
@@ -30,37 +38,17 @@ You can deploy this package using either the "One-Click" method or manually via 
 
 *Note: This button requires the repository to be hosted on GitHub.*
 
-### Option 2: Manual Deployment (CLI)
+### Manual Deployment
 
-Use this method to test your SFDX skills or if you want to modify the code before deploying.
+If you prefer to use the Salesforce CLI, you can clone this repository and deploy the source using `sfdx force:source:deploy`. We assume if you are choosing this route, you know what you are doing!
 
-1.  **Clone the repository:**
-    ```bash
-    git clone <repo-url>
-    cd salesforce-test
-    ```
+### Post-Deployment
 
-2.  **Authorize your Dev Hub (if not already done):**
-    ```bash
-    sfdx auth:web:login -d -a MyDevHub
-    ```
+**Generate Sample Data:**
+1.  Open the **Salesforce Skills Test** App.
+2.  Click on the **Data Generator** tab.
+3.  Click the **Generate Sample Data** button.
 
-3.  **Create a Scratch Org:**
-    ```bash
-    sfdx force:org:create -f config/project-scratch-def.json -a TestOrg -s -d 30
-    ```
-    *Note: You may need to create the `config/project-scratch-def.json` file if it doesn't exist, or deploy to a developer edition org.*
-
-4.  **Deploy the Source:**
-    ```bash
-    sfdx force:source:deploy -p force-app -u TestOrg
-    ```
-
-5.  **Generate Sample Data:**
-    *   Open the **Salesforce Skills Test** App.
-    *   Click on the **Data Generator** tab.
-    *   Click the **Generate Sample Data** button.
-    *   *Alternatively, you can run this anonymous Apex: `DataGenerationService.generateData();`*
 
 ## Challenges
 
