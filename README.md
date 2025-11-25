@@ -27,7 +27,7 @@ You can deploy this package using either the "One-Click" method or manually via 
 
 ### Recommended: One-Click Deploy
 
-1.  **Create a new Developer Edition Org** (or use a fresh Scratch Org).
+1.  **Create a new Developer Edition Org** (or use a fresh Scratch Org). [Sign up for a free Developer Edition here](https://www.salesforce.com/form/developer-signup/?d=pb).
 2.  Log in to your new org.
 3.  Click the button below to deploy the package directly to your org.
 
