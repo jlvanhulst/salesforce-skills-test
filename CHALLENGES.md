@@ -9,7 +9,7 @@ This document outlines a list of potential tasks (challenges) for the Volunteer 
 *   **Scenario:** The Program Director needs a weekly summary of total volunteer hours, active volunteers per city, and upcoming shifts.
 *   **Solution Paths:**
     *   **Native (Low Code):** Create a standard Salesforce Dashboard with Reports (e.g., "Hours by City", "New Volunteers this Week"). Subscribe the director to a weekly email refresh.
-    *   **External (API/BI):** Connect Salesforce to Tableau or PowerBI.
+    *   **External (API/BI):** Connect Salesforce to Tableau or PowerBI or use the REST API to build a dashboard App
 
 ### 2. Volunteer Sign Up & Documentation
 **Goal:** Streamline the intake process and ensure legal compliance.
