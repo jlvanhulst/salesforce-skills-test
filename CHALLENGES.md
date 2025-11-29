@@ -16,7 +16,7 @@ This document outlines a list of potential tasks (challenges) for the Volunteer 
 *   **Scenario:** New volunteers must sign the "Volunteer Handbook" and "Safety Waiver" before joining.
 *   **Solution Paths:**
     *   **Native (Flow):** Build a Screen Flow exposed on a public Experience Cloud site. Use a checkbox for "I Agree" or a simple signature component (LWC) to capture a signature image.
-    *   **External (Integration):** Use a form tool (FormAssembly, Typeform) integrated with DocuSign/PandaDoc.
+    *   **External (Integration):** Use a form tool (FormAssembly, Typeform, or create an external App) and integrate with DocuSign/PandaDoc or similar.
 
 ### 3. Volunteer Shift Creation & Sign Up
 **Goal:** Manage volunteer schedules and allow self-signup.
