@@ -25,6 +25,8 @@ This document outlines a list of potential tasks (challenges) for the Volunteer 
     *   **Native (Custom Objects):** Create a `Shift__c` object. Build a Flow for volunteers to view available shifts and create a `Shift_Assignment__c` record.
     *   **Manual (Low Tech):** Coordinators send email blasts. Volunteers reply. Admin manually enters data. (The "Challenge" here is to automate this away).
 
+Condsider what kind of connections would make sense for these shifts - ideally volunteer hours would always be part of shift? Shifts are local. And possible repeating (weekly?) 
+
 ## Advanced Challenges
 
 ### 4. Member Journey Flow
